@@ -8,7 +8,7 @@ pipeline {
         }
         stage('flake8check'){
             steps {
-                PowerShell(". '.\\Invoke-Flake8Check.ps1'") 
+                PowerShell(". '.\\build\\Invoke-Flake8Check.ps1'") 
             }
         }
     }
