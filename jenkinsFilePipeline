@@ -6,6 +6,11 @@ pipeline {
                 PowerShell(". '.\\build\\CreateVenv.ps1'") 
             }
         }
+        stage('flake8check'){
+            steps {
+                PowerShell(". '.\\Invoke-Flake8Check.ps1'") 
+            }
+        }
     }
 
 }
