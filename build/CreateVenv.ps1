@@ -3,6 +3,7 @@ $envName = 'py_virtual_env'
 $fullEnvPath = "$PSScriptRoot\$envName"
 $activateScriptPath = "$fullEnvPath\Scripts\Activate.ps1"
 
+Out-Host -InputObject("Workspace env variable: {0}" -f $env:WORKSPACE)
 Out-Host -InputObject("Creating python venv: $fullEnvPath")
 python.exe -m venv $fullEnvPath
 
