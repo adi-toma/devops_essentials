@@ -1,3 +1,4 @@
 # devops_essentials
 
-* Commit Ioana
+* Commit SlickAF
+
