@@ -16,4 +16,3 @@ pip list
 deactivate
 
 Out-Host -InputObject("exit code: {0}" -f $LASTEXITCODE)
-has context menu
