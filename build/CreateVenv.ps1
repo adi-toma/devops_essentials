@@ -1,4 +1,3 @@
-[11:58 AM] Marius Toma
 $envName = 'py_virtual_env'
 $fullEnvPath = "$PSScriptRoot\$envName"
 $activateScriptPath = "$fullEnvPath\Scripts\Activate.ps1"
