@@ -14,12 +14,12 @@ pipeline {
         }
     }
 
-    post {
-        //cleanup
-        // always {
-        //     cleanWs()
-        // }
-    }
+    // post {
+    //     //cleanup
+    //     // always {
+    //     //     cleanWs()
+    //     // }
+    // }
 }
  
 def PowerShell(psCmd) {
