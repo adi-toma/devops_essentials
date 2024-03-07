@@ -10,8 +10,5 @@ def test_greeter():
         fixtures = yaml.load(fixtures_file)
         for fixture in fixtures:
             answer = fixture.pop('answer')
-<<<<<<< HEAD
             assert_equal(greet(**fixture), answer)
-=======
-            assert_equal(greet(**fixture), answer)
->>>>>>> origin/python_code
+

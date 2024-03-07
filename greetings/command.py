@@ -15,13 +15,10 @@ def process():
                     arguments.title, arguments.polite)
     print(message)
 
-<<<<<<< HEAD
-   arguments = parser.parse_args()
-   message = greet(arguments.personal, arguments.family, 
-               arguments.title, arguments.polite)
-   print(message)
-=======
->>>>>>> origin/python_code
+    arguments = parser.parse_args()
+    message = greet(arguments.personal, arguments.family, 
+    arguments.title, arguments.polite)
+    print(message)
 
 if __name__ == "__main__":
     process()
