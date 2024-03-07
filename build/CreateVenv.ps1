@@ -11,6 +11,7 @@ C:\Users\rares\AppData\Local\Programs\Python\Python312\python.exe -m venv $fullE
  
 #upgrade pip
 python -m pip install --upgrade pip
+pip install flake8
 pip list
  
 deactivate
