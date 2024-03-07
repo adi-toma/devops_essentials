@@ -16,7 +16,7 @@ pipeline {
 
     }
 
-}
+
 
 post
 {
@@ -24,6 +24,7 @@ post
 	always{
 	cleanWs()
 	}
+}
 }
 def PowerShell(psCmd) {
     psCmd=psCmd.replaceAll("%", "%%")
