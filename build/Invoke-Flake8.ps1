@@ -9,7 +9,7 @@ $pythonSourcePath = "$env:WORKSPACE\greetings"
 flake8 $pythonSourcePath --output-file=flake8_results.txt
 
 if ($LASTEXITCODE -ne 0) {
-    Write-Output "The program failed with exit code: " + $LASTEXITCODE
+    Write-Output "The program failed with exit code: $LASTEXITCODE"
     Get-Content -Path .\flake8_results.txt
 } else {
     Write-Output "The program completed successfully"
