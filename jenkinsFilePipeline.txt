@@ -12,13 +12,10 @@ pipeline {
                 PowerShell(". '.\\build\\Invoke-Flake8.ps1'") 
             }
         }
+
     }
-    post{
-        //cleanup
-        always {
-            cleanWs()
-        }
-    }
+
+
 }
 
 def PowerShell(psCmd) {
