@@ -20,11 +20,7 @@ def greet(personal, family, title="", polite=False):
 
     greeting = "How do you do, " if polite else "Hey, "
     if title:
-<<<<<<< HEAD
         greeting += title + " "
-=======
         greeting += title+" "
->>>>>>> origin/python_code
-
     greeting += personal + " " + family + "."
     return greeting
