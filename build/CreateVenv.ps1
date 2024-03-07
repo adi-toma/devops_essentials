@@ -11,9 +11,9 @@ C:\Users\panai\AppData\Local\Programs\Python\Python311\python.exe -m venv $fullE
 
 #upgrade pip
 python -m pip install --upgrade pip
-pip list
+pip install flake8
 
-python -m pip install flake8
+pip list
 
 deactivate
 
