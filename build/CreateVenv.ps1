@@ -12,9 +12,11 @@ python.exe -m venv $fullEnvPath
 
 #upgrade pip
 python -m pip install --upgrade pip
+pip install flake8
+pip install pytest
 pip list
 
-python -m pip install flake8
+
 
 deactivate
 
