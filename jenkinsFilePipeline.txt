@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    cleanWs notFailBuild: true
+    
     stages{
         stage('setup_venv'){
             steps {
@@ -18,6 +18,11 @@ pipeline {
 
 }
 
+post
+{
+//cleanup
+	cleanWs()
+}
 def PowerShell(psCmd) {
     psCmd=psCmd.replaceAll("%", "%%")
     bat "powershell.exe -NonInteractive -ExecutionPolicy Bypass -Command \"\$ErrorActionPreference='Stop';[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;$psCmd;EXIT \$global:LastExitCode\""
