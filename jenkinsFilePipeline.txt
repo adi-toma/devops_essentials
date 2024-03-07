@@ -1,9 +1,15 @@
 pipeline {
     agent any
     stages{
-        stage('build'){
+        stage('setup_venv'){
             steps {
                 PowerShell(". '.\\build\\CreateVenv.ps1'") 
+            }
+        }
+
+        stage('flake_8_check'){
+            steps {
+                PowerShell(". '.\\build\\Invoke-flake8.ps1'") 
             }
         }
     }
