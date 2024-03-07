@@ -14,6 +14,7 @@ python.exe -m venv $fullEnvPath
 python -m pip install --upgrade pip
 pip install flake8
 pip install pytest
+pip install yaml
 pip list
 
 
