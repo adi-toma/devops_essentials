@@ -1,6 +1,5 @@
 pipeline {
     agent any
-    cleanWs notFailBuild: true
     stages{
         stage('setup_venv'){
             steps {
@@ -13,6 +12,11 @@ pipeline {
                 PowerShell(". '.\\build\\Invoke-Flake8.ps1'") 
             }
         }
+    }
+
+    post {
+        //cleanup
+        cleanWs()
     }
 }
  
