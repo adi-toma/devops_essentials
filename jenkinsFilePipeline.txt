@@ -6,13 +6,13 @@ pipeline {
                 PowerShell(". '.\\build\\CreateVenv.ps1'") 
             }
         }
-    }
-	stages{
+
         stage('flake_8_check'){
             steps {
                 PowerShell(". '.\\build\\Invoke-Flake8.ps1'") 
             }
         }
+
     }
 
 }

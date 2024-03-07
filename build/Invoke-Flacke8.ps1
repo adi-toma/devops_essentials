@@ -4,3 +4,5 @@ $activateScriptPath = "$fullEnvPath\Scripts\Activate.ps1"
 
 # activate the Python environment
 & $activateScriptPath
+
+deactivate
