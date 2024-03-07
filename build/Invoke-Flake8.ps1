@@ -8,4 +8,4 @@ $pythonSourcePath = "$env:WORKSPACE\greetings"
 
 flake8 $pythonSourcePath --output-file=flake8_results.txt
 
-eactivate
+deactivate
