@@ -1,3 +1,7 @@
 # devops_essentials
+<<<<<<< HEAD
+* Commit Adrian_Ghiorma
+=======
 
-* Commit Ioana
+
+>>>>>>> origin/devops_marius_t_day3
