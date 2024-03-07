@@ -8,5 +8,5 @@ def test_greeter():
             'fixtures','samples.yaml')) as fixtures_file:
         fixtures=yaml.load(fixtures_file)
         for fixture in fixtures:
-            answer=fixture.pop('answer')
+            answer = fixture.pop('answer')
             assert_equal(greet(**fixture), answer)
