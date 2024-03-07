@@ -16,9 +16,10 @@ def process():
     print(message)
 
     arguments = parser.parse_args()
-    message = greet(arguments.personal, arguments.family, 
-    arguments.title, arguments.polite)
+    message = greet(arguments.personal, arguments.family,
+                    arguments.title, arguments.polite)
     print(message)
+
 
 if __name__ == "__main__":
     process()
