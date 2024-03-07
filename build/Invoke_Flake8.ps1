@@ -6,6 +6,6 @@ $pythonSourcePath = "$env:WORKSPACE\greetings"
 # activate the Python environment
 & $activateScriptPath
 
-flake8 $pythonSourcePath
+flake8 $pythonSourcePath --output-file=flake8_results.txt
  
 deactivate
