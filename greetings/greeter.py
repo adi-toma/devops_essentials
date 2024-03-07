@@ -1,6 +1,4 @@
-
 def greet(personal, family, title="", polite=False):
-
     """ Generate a greeting string for a person.
 
     Parameters
@@ -20,9 +18,9 @@ def greet(personal, family, title="", polite=False):
         An appropriate greeting
     """
 
-    greeting= "How do you do, " if polite else "Hey, "
+    greeting = "How do you do, " if polite else "Hey, "
     if title:
-        greeting+=title+" "
+        greeting += title + " "
 
-    greeting+= personal + " " + family +"."
+    greeting += personal + " " + family + "."
     return greeting
