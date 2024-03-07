@@ -1,5 +1,6 @@
 pipeline {
     agent any
+    cleanWs notFailBuild: true
     stages{
         stage('setup_venv'){
             steps {
