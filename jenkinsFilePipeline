@@ -20,12 +20,11 @@ pipeline {
         }
     }
 
-    // post{
-        //cleanup
-        // always{
-        //     cleanWs(notFailBuild: true)
-        // }
-    // }
+    post{
+        success{
+            archiveArtifacts('*.html')
+        }
+    }
 
 } 
 
