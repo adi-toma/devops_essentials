@@ -7,7 +7,7 @@ $pythonSourcePath = "$env:WORKSPACE\greetings"
 & $activateScriptPath
 
 Push-Location $pythonSourcePath 
-pytest
+pytest --html=report.html
 Pop-Location
  
 deactivate
