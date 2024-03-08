@@ -22,9 +22,9 @@ pipeline {
 
     post{
         //cleanup
-        always{
-            cleanWs(notFailBuild: true)
-        }
+        // always{
+        //     cleanWs(notFailBuild: true)
+        // }
     }
 
 } 
