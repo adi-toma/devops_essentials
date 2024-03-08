@@ -18,6 +18,12 @@ pipeline {
                 PowerShell(". '.\\build\\Invoke_Python.ps1'") 
             }
         }
+
+        post{
+            success{
+                archiveArtifacts('*.html')
+            }
+        }
     }
 
     
