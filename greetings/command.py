@@ -11,7 +11,7 @@ def process():
     parser.add_argument('family')
 
     arguments = parser.parse_args()
-    message= greet(arguments.personal, arguments.family,
+    message = greet(arguments.personal, arguments.family,
                     arguments.title, arguments.polite)
     print(message)
 
