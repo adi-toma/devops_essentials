@@ -10,7 +10,6 @@ $pythonSourcePath = "$env:WORKSPACE\greetings"
 Push-Location -Path $pythonSourcePath
 pytest --html=report.html
 
-Invoke-Item report.html
 Pop-Location
 
 deactivate
