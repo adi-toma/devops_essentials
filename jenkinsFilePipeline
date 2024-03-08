@@ -13,6 +13,12 @@ pipeline {
                 PowerShell(". '.\\build\\Invoke-flake8.ps1'") 
             }
         }
+
+        stage('pytest_phase'){
+            steps {
+                PowerShell(". '.\\build\\Invoke-flake8.ps1'") 
+            }
+        }
     }
 
     
