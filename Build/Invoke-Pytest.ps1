@@ -8,7 +8,7 @@ $pythonSourcePath = "env:WORKSPACE\greetings"
 
 #change current working directory
 Push-Location -Path $pythonSourcePath
-pytest --html=report.html --self-contained-html
+pytest --html=report.html 
 Pop-Location
 
 deactivate
