@@ -12,6 +12,12 @@ pipeline {
                 PowerShell(". '.\\build\\Invoke_Flake8.ps1'") 
             }
         }
+
+        stage('pytest'){
+            steps {
+                PowerShell(". '.\\build\\Invoke_Pytest.ps1'") 
+            }
+        }
     }
 
     post{
