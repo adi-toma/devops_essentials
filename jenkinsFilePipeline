@@ -1,10 +1,10 @@
 pipeline {
     agent any
-    
+
     stages{
-        stage('setup_venv'){
+        stage('build'){
             steps {
-                PowerShell(". '.\\build\\CreateVenv.ps1'") 
+                PowerShell(". '.\\build\\CreateVenv.ps1'")
             }
         }
 
@@ -14,19 +14,15 @@ pipeline {
             }
         }
 
+        stage('pytest_phase'){
+            steps {
+                PowerShell(". '.\\build\\Invoke-Pytest.ps1'")
+            }
+        }
     }
-
-
-
-post
-{
-//cleanup
-	always{
-	cleanWs()
-	}
 }
-}
+
 def PowerShell(psCmd) {
-    psCmd=psCmd.replaceAll("%", "%%")
-    bat "powershell.exe -NonInteractive -ExecutionPolicy Bypass -Command \"\$ErrorActionPreference='Stop';[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;$psCmd;EXIT \$global:LastExitCode\""
+        psCmd=psCmd.replaceAll("%", "%%")
+        bat "powershell.exe -NonInteractive -ExecutionPolicy Bypass -Command \"\$ErrorActionPreference='Stop';[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;$psCmd;EXIT \$global:LastExitCode\""
 }
