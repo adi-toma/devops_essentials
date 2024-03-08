@@ -15,7 +15,7 @@ pipeline {
 
         stage('pytest_phase'){
             steps {
-                PowerShell(". '.\\build\\Invoke_Pytest.ps1'") 
+                PowerShell(". '.\\build\\Invoke_Python.ps1'") 
             }
         }
     }
