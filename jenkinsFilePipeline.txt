@@ -12,14 +12,15 @@ pipeline {
                 PowerShell(". '.\\build\\Invoke-Flake8.ps1'") 
             }
         }
+		
+		stage('pytest_phase'){
+            steps {
+                PowerShell(". '.\\build\\Invoke-Pytest.ps1'") 
+            }
+        }
 
     }
-    post {
-        //cleanup
-        always {
-            cleanWs()
-        }
-    }
+
 
 }
 
