@@ -4,7 +4,7 @@ $activateScriptPath = "$fullEnvPath\Scripts\Activate.ps1"
 $pythonSourcePath = "$env:WORKSPACE\greetings"
 
 # activate the Python environment
-& $activateScriptPath
+& $activateScriptPath 
 
 flake8 $pythonSourcePath --output-file=flake8_results.txt
 
