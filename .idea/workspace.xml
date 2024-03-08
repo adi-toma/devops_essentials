@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01a51452-2a40-4816-b562-838722e2e5c6" name="Changes" comment="Refactor script">
-      <change beforePath="$PROJECT_DIR$/greetings/greeter.py" beforeDir="false" afterPath="$PROJECT_DIR$/greetings/greeter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/Invoke-Pytest.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CreateVenv.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/build/CreateVenv.ps1" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,19 +25,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "devops__cata__day3",
-    "last_opened_file_path": "C:/Java/Rinf/devops_essentials",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;devops__cata__day3&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Java/Rinf/devops_essentials&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -47,7 +49,8 @@
       <workItem from="1709628312867" duration="2497000" />
       <workItem from="1709712500041" duration="3243000" />
       <workItem from="1709718754299" duration="1110000" />
-      <workItem from="1709798034768" duration="10911000" />
+      <workItem from="1709798034768" duration="12185000" />
+      <workItem from="1709884792181" duration="2657000" />
     </task>
     <task id="LOCAL-00001" summary="Add new line in README.md">
       <option name="closed" value="true" />
