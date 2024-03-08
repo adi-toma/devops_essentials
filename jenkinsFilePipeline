@@ -21,6 +21,12 @@ pipeline {
 
     }
 
+    post {
+        success {
+            archiveArtifacts('*.html')
+        }
+    }
+
 
 }
 
