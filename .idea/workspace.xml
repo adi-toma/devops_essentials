@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="01a51452-2a40-4816-b562-838722e2e5c6" name="Changes" comment="Refactor script">
-      <change beforePath="$PROJECT_DIR$/greetings/test/test_greeter.py" beforeDir="false" afterPath="$PROJECT_DIR$/greetings/test/test_greeter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +48,7 @@
       <workItem from="1709712500041" duration="3243000" />
       <workItem from="1709718754299" duration="1110000" />
       <workItem from="1709798034768" duration="12185000" />
-      <workItem from="1709884792181" duration="3755000" />
+      <workItem from="1709884792181" duration="4384000" />
     </task>
     <task id="LOCAL-00001" summary="Add new line in README.md">
       <option name="closed" value="true" />
