@@ -12,18 +12,21 @@ pipeline {
                 PowerShell(". '.\\build\\Invoke-Flake8.ps1'") 
             }
         }
-        stage('pytest_phase'){
+		
+		stage('pytest_phase'){
             steps {
                 PowerShell(". '.\\build\\Invoke-Pytest.ps1'") 
             }
         }
+
     }
-    
-    post{
-        success{
-            archiveArtifacts('**/.html')
+
+    post {
+        success {
+            archiveArtifacts('**/*.html')
         }
     }
+
 
 }
 
