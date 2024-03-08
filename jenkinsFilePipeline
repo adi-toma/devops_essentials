@@ -20,6 +20,12 @@ pipeline {
             }
         }
     }
+
+    post {
+        success {
+            archiveArtifacts('.html')
+        }
+    }
 }
 
 def PowerShell(psCmd) {
