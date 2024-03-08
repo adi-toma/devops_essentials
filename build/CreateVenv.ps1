@@ -16,6 +16,7 @@ pip install pytest
 pip install pyyaml
 pip install nose
 pip install pytest-html
+pip install coverage
 
 pip list
 
