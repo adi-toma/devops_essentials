@@ -20,12 +20,12 @@ pipeline {
         }
     }
 
-    post{
+    // post{
         //cleanup
         // always{
         //     cleanWs(notFailBuild: true)
         // }
-    }
+    // }
 
 } 
 
