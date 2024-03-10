@@ -18,9 +18,9 @@ pipeline {
             }
         }
 		
-		stage('pytest'){
+		stage('build_python_wheel'){
             steps {
-                PowerShell(". '.\\build\\Invoke-Pytest.ps1'") 
+                PowerShell(". '.\\build\\Build-PythonWheel.ps1'")
             }
         }
         
