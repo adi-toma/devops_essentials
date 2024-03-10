@@ -25,6 +25,12 @@ pipeline {
         }
         
     }
+	
+	post {
+        success {
+            archiveArtifacts('**/*.html', 'bdist/*.zip')
+        }
+    
 
 }
 
