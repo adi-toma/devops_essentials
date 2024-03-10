@@ -28,7 +28,8 @@ pipeline {
 	
 	post {
         success {
-            archiveArtifacts('**/*.html', 'bdist/*.zip')
+            archiveArtifacts('**/*.html')
+			archiveArtifacts('bdist/*.zip')
         }
     }
 
