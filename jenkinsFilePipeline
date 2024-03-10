@@ -21,7 +21,7 @@ pipeline {
 		stage('build_python_wheel'){
             steps {
                 PowerShell(". '.\\build\\Build-PythonWheel.ps1'")
-				PowerShell(". '.\\build\\Build-PythonWheel.ps1 -buildParam "bdist"'")
+				PowerShell(". '.\\build\\Build-PythonWheel.ps1 -buildParam bdist'")
             }
         }
         
