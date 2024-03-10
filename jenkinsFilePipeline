@@ -30,7 +30,7 @@ pipeline {
         success {
             archiveArtifacts('**/*.html', 'bdist/*.zip')
         }
-    
+    }
 
 }
 
