@@ -19,7 +19,7 @@ pipeline {
             }
         }
 
-        stage('pytest'){
+        stage('pydist'){
             steps {
                 PowerShell(". '.\\build\\Build-PythonDist.ps1'") 
             }
