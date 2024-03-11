@@ -9,4 +9,6 @@ Push-Location $env:WORKSPACE
 
 python.exe setup.py sdist
 
+Pop-Location
+
 deactivate
