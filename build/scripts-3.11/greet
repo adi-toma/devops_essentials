@@ -1,0 +1,5 @@
+#!C:\Users\panai\AppData\Local\Programs\Python\Python311\python.exe
+
+from greetings.command import process
+
+process()
