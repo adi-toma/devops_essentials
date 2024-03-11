@@ -18,6 +18,12 @@ pipeline {
                 PowerShell(". '.\\build\\Invoke_Pytest.ps1'") 
             }
         }
+
+        stage('pytest'){
+            steps {
+                PowerShell(". '.\\build\\Build-PythonDist.ps1'") 
+            }
+        }
     }
 
     post{
