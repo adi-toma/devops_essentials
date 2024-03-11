@@ -1,3 +1,9 @@
 # devops_essentials
 
-* Commit Ioana
+<<<<<<< HEAD
+* Commit <Smaranda S>
+
+* New commit
+=======
+
+>>>>>>> origin/python_code
