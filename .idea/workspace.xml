@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01a51452-2a40-4816-b562-838722e2e5c6" name="Changes" comment="Refactor script" />
+    <list default="true" id="01a51452-2a40-4816-b562-838722e2e5c6" name="Changes" comment="Refactor script">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Invoke-Flake8.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/build/Invoke-Flake8.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Invoke-Pytest.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/build/Invoke-Pytest.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/greet" beforeDir="false" afterPath="$PROJECT_DIR$/python/scripts/greet" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/setup.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +40,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Java\Rinf\devops_essentials\python" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -47,7 +58,7 @@
       <workItem from="1709718754299" duration="1110000" />
       <workItem from="1709798034768" duration="12185000" />
       <workItem from="1709884792181" duration="7023000" />
-      <workItem from="1710143806343" duration="5035000" />
+      <workItem from="1710143806343" duration="5986000" />
     </task>
     <task id="LOCAL-00001" summary="Add new line in README.md">
       <option name="closed" value="true" />
