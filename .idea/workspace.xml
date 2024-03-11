@@ -4,17 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01a51452-2a40-4816-b562-838722e2e5c6" name="Changes" comment="Refactor script">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/Invoke-Flake8.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/build/Invoke-Flake8.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/Invoke-Pytest.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/build/Invoke-Pytest.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/greet" beforeDir="false" afterPath="$PROJECT_DIR$/python/scripts/greet" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/python/setup.py" afterDir="false" />
-    </list>
+    <list default="true" id="01a51452-2a40-4816-b562-838722e2e5c6" name="Changes" comment="Refactor script" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -58,7 +59,7 @@
       <workItem from="1709718754299" duration="1110000" />
       <workItem from="1709798034768" duration="12185000" />
       <workItem from="1709884792181" duration="7023000" />
-      <workItem from="1710143806343" duration="5986000" />
+      <workItem from="1710143806343" duration="6289000" />
     </task>
     <task id="LOCAL-00001" summary="Add new line in README.md">
       <option name="closed" value="true" />
