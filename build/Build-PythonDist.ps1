@@ -5,7 +5,7 @@ $activateScriptPath = "$fullEnvPath\Scripts\Activate.ps1"
 # activate the Python environment
 & $activateScriptPath
 
-Push-Location $env:WORKSPACE
+Push-Location "$env:WORKSPACE\python"
 
 python.exe setup.py sdist
 
