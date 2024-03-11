@@ -1,7 +1,7 @@
 $envName = 'py_virtual_env'
 $fullEnvPath = "$PSScriptRoot\$envName"
 $activateScriptPath = "$fullEnvPath\Scripts\Activate.ps1"
-$pythonSourcePathToCheck = "$env:WORKSPACE/greetings"
+$pythonSourcePathToCheck = "$env:WORKSPACE\python\greetings"
 
 #activate the Python environment
 & $activateScriptPath
