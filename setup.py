@@ -6,5 +6,7 @@ setup(
     version = "0.1.0",
     packages = find_packages(exclude=['*test']),
     scripts = ['scripts/greet'],
-    install_requires = ['argparse']
+    install_requires = ['argparse'],
+    author = "Catalin",
+    author_email = "buzgaucatalin@yahoo.com"
 )
