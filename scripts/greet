@@ -1,0 +1,6 @@
+[10:36] Rares B
+#!/usr/bin/env python
+
+from greetings.command import process
+
+process()
