@@ -20,4 +20,5 @@ def test_greeter():
         for fixture in fixtures:
             answer=fixture.pop('answer')
             assert_equal(greet(**fixture), answer)
+            
 >>>>>>> 4bebfbe (Add python code)
