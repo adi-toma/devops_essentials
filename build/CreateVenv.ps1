@@ -1,7 +1,7 @@
 Import-Module -Name "$PSScriptRoot\powershell_modules\PipelineUtilities.psm1" -Force
 
 $yamlFilePath = "$PSScriptRoot\pipeline_config.yaml"
-$yamlConfigContents = Invoke-ReadYamlFile -yamlFilePath $yamlFilePath
+$yamlConfigContents = PipelineUtilities\Invoke-ReadYamlFile -yamlFilePath $yamlFilePath
 
 $envName = $yamlConfigContents['python_env_name']
 $fullEnvPath = "$PSScriptRoot\$envName"
@@ -9,7 +9,13 @@ $activateScriptPath = "$fullEnvPath\Scripts\Activate.ps1"
 
 Out-Host -InputObject("Workspace env variable: {0}" -f $env:WORKSPACE)
 Out-Host -InputObject("Creating python venv: $fullEnvPath")
-python.exe -m venv $fullEnvPath
+
+$exitCode = PipelineUtilities\Invoke-CreateVirtualPythonEnv -pythonEnvName $envName
+
+if ($exitCode -ne 0) {
+    Out-Host -InputObject("CreateVenv: exited with code {0} during VENV creation" -f $exitCode)
+    Exit $exitCode
+}
 
 # activate the Python environment
 & $activateScriptPath

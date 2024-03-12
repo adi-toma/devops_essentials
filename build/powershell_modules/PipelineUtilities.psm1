@@ -39,3 +39,45 @@ function Invoke-ReadYamlFile {
 
     return $parsedYaml
 }
+
+<#
+.SYNOPSIS
+
+Create the VENV.
+
+.DESCRIPTION
+
+Create the VENV.
+Create a new Python environment with the name and location supplied by parameter.
+
+.PARAMETER pythonEnvName
+The name of the python environment to create.
+
+.PARAMETER pythonEnvPath
+Optional paramater that defines the location of the Python environment.
+
+.OUTPUTS
+
+0 in case of success or non zero exit code in case of failure.
+
+#>
+function Invoke-CreateVirtualPythonEnv {
+    param(
+        $pythonEnvName,
+        $pythonEnvPath 
+    )
+    
+    $pythonEnvPath = Resolve-Path -Path "$PSScriptRoot\..\"
+    $pythonEnvPath = Join-Path -Path $pythonEnvPath -ChildPath $pythonEnvName 
+
+    Out-Host -InputObject('Invoke-CreateVirtualPythonEnv : creating VENV {0}' -f $pythonEnvPath)
+    
+    python.exe -m venv $pythonEnvPath
+
+    if ($LASTEXITCODE -ne 0) {
+        Out-Host -InputObject('Invoke-CreateVirtualPythonEnv : failed to create virtual Python Env {0}' -f $pythonEnvPath)
+        Out-Host -InputObject('Invoke-CreateVirtualPythonEnv : python.exe returned {0}' -f $LASTEXITCODE)
+    }
+    
+    return $LASTEXITCODE
+}
