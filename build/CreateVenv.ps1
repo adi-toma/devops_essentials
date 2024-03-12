@@ -1,4 +1,9 @@
-$envName = 'py_virtual_env'
+Import-Module -Name "$PSScriptRoot\powershell_modules\PipelineUtilities.psm1" -Force
+
+$yamlFilePath = "$PSScriptRoot\pipeline_config.yaml"
+$yamlConfigContents = Invoke-ReadYamlFile -yamlFilePath $yamlFilePath
+
+$envName = $yamlConfigContents['python_env_name']
 $fullEnvPath = "$PSScriptRoot\$envName"
 $activateScriptPath = "$fullEnvPath\Scripts\Activate.ps1"
 
